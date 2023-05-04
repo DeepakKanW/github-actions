@@ -1,0 +1,10 @@
+name: Simple Command
+
+on: [push]
+
+jobs: 
+    run-hello-world: 
+        runs-on: ubuntu-latest
+        steps: 
+          - name: print node version
+            run: node -v
